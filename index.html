@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Distance</title>
   <link rel="stylesheet" href="style/normalize.css" />
   <link rel="stylesheet" href="style/style.css" />
 </head>
@@ -140,48 +140,107 @@
         </a>
       </nav>
     </div>
-  
 
-  <div class="main-feed">
-    <div class="create-post">
-      <div class="create-post__header">
-        <h4 class="create-post__title">Create post</h4>
+
+    <div class="main-feed">
+      <div class="create-post">
+        <div class="create-post__header">
+          <h4 class="create-post__title">Create post</h4>
+        </div>
+        <!-- /create-post.header -->
+        <div class="create-post__body">
+          <img src="img/avatar.png" alt="avatar" class="user-avatar">
+          <div class="create-post__input" contenteditable="true">What’s on your mind, Mateusz?</div>
+        </div>
+        <!-- /create-post.body -->
+        <div class="create-post__footer">
+          <button class="tag">
+            <svg class="tag-icon" width="24" height="24">
+              <use xlink:href="img/icons.svg#picture"></use>
+            </svg>
+            <span class="button-text">Photo/Video</span>
+          </button>
+          <button class="tag">
+            <svg class="tag-icon" width="24" height="24">
+              <use xlink:href="img/icons.svg#user-add"></use>
+            </svg>
+            <span class="button-text">Tag friends</span>
+          </button>
+          <button class="tag">
+            <svg class="tag-icon" width="24" height="24">
+              <use xlink:href="img/icons.svg#smile"></use>
+            </svg>
+            <span class="button-text">Feeling/Activ...</span>
+          </button>
+          <button class="tag">
+            <svg class="tag-icon" width="24" height="24">
+              <use xlink:href="img/icons.svg#options"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- /create-post.footer -->
       </div>
-      <!-- /.header -->
-      <div class="create-post__body">
-        <img src="img/avatar.png" alt="avatar" class="user-avatar">
-        <div class="create-post__input" contenteditable="true">What’s on your mind, Mateusz?</div>
+      <div class="post">
+        <div class="post-header">
+          <div class="user">
+            <img src="img/avatar.png" alt="avatar" class="user-avatar">
+            <div class="post-info">
+              <a href="#" class="post-author">Mateusz Wierzbicki</a>
+              <div class="post-time">
+                <span class="post-time__info">3 hrs</span>
+                <svg class="settings-icon" width="14" height="14">
+                  <use xlink:href="img/icons.svg#settings"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <button class="post-button">
+            <svg class="post-button__icon" width="24" height="24">
+              <use xlink:href="img/icons.svg#options"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- /.post-header -->
+        <div class="post-content">
+          <p class="post-text">
+            Did you know that all of this was made using only components and styles from Ant Desing System for Figma?
+            Learn more: <a href="#">https://antforfigma.com</a>
+          </p>
+          <img src="img/post-img.jpg" alt="post-img" class="post-img">
+        </div>
+        <!-- /.post-content -->
+        <div class="like">
+          <svg class="like-icon" width="16" height="16">
+            <use xlink:href="img/icons.svg#like-active"></use>
+          </svg>
+          <span class="like-counter">23</span>
+        </div>
+        <!-- /.like -->
+        <div class="post-footer">
+          <button class="post-button">
+            <svg class="post-button__icon" width="24" height="24">
+              <use xlink:href="img/icons.svg#like"></use>
+            </svg>
+            <span class="post-button__text">Like</span>
+          </button>
+          <button class="post-button">
+            <svg class="post-button__icon" width="24" height="24">
+              <use xlink:href="img/icons.svg#chat"></use>
+            </svg>
+            <span class="post-button__text">Comment</span>
+          </button>
+          <button class="post-button">
+            <svg class="post-button__icon" width="24" height="24">
+              <use xlink:href="img/icons.svg#share"></use>
+            </svg>
+            <span class="post-button__text">Share</span>
+          </button>
+        </div>
+        <!-- /.post-footer -->
       </div>
-      <!-- /.body -->
-      <div class="create-post__footer">
-        <button class="tag">
-          <svg class="tag-icon" width="24" height="24">
-            <use xlink:href="img/icons.svg#picture"></use>
-          </svg>
-          <span class="button-text">Photo/Video</span>
-        </button>
-        <button class="tag">
-          <svg class="tag-icon" width="24" height="24">
-            <use xlink:href="img/icons.svg#user-add"></use>
-          </svg>
-          <span class="button-text">Tag friends</span>
-        </button>
-        <button class="tag">
-          <svg class="tag-icon" width="24" height="24">
-            <use xlink:href="img/icons.svg#smile"></use>
-          </svg>
-          <span class="button-text">Feeling/Activ...</span>
-        </button>
-        <button class="tag">
-          <svg class="tag-icon" width="24" height="24">
-            <use xlink:href="img/icons.svg#options"></use>
-          </svg>
-        </button>
-      </div>
-      <!-- /.footer -->
+      <!-- /.post -->
     </div>
   </div>
-</div>
 
 </body>
 
